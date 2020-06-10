@@ -6,6 +6,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using CollectionViewEx.Sample.ViewModels;
 
 namespace CollectionViewEx.Sample.Droid
 {
@@ -18,9 +19,12 @@ namespace CollectionViewEx.Sample.Droid
             ToolbarResource = Resource.Layout.Toolbar;
 
             base.OnCreate(savedInstanceState);
+            Xamarin.Forms.Forms.SetFlags(new string[] { "RadioButton_Experimental" });
 
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
+            IocManager.Current.Init();
+
             LoadApplication(new App());
         }
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)

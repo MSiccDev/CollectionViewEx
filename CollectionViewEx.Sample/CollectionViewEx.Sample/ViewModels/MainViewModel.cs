@@ -88,6 +88,7 @@ namespace CollectionViewEx.Sample.ViewModels
             {
                 Set(ref _scrollToItemNumber, value);
                 this.ScrollToItemCommand.RaiseCanExecuteChanged();
+                this.ScrollToGroupCommand.RaiseCanExecuteChanged();
             }
         }
 
