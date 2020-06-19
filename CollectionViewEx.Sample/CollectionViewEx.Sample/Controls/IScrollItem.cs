@@ -4,11 +4,10 @@ using System.Text;
 
 namespace CollectionViewEx.Sample.Controls
 {
-    public interface IConfigurableScrollItem
-    {
-        ScrollToConfiguration Config { get; set; }
-
-    }
+public interface IConfigurableScrollItem
+{
+    ScrollToConfiguration Config { get; set; }
+}
 
     public interface IScrollItem : IConfigurableScrollItem
     {
@@ -18,6 +17,5 @@ namespace CollectionViewEx.Sample.Controls
     public interface IGroupScrollItem : IConfigurableScrollItem
     {
         object GroupValue { get; set; }
-
     }
 }

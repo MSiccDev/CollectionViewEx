@@ -5,10 +5,10 @@ using Xamarin.Forms;
 
 namespace CollectionViewEx.Sample.Controls
 {
-    public class ScrollToConfiguration
-    {
-        public bool Animated { get; set; } = true;
+public class ScrollToConfiguration
+{
+    public bool Animated { get; set; } = true;
 
-        public ScrollToPosition ScrollToPosition { get; set; } = ScrollToPosition.Center;
-    }
+    public ScrollToPosition ScrollToPosition { get; set; } = ScrollToPosition.Center;
+}
 }
